@@ -19,5 +19,6 @@
 @property (nonatomic, retain) NSArray *items;
 
 - (IBAction)clickLogin:(id)sender;
+- (IBAction)clickAddFile:(id)sender;
 
 @end

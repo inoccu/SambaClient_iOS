@@ -145,7 +145,7 @@
     
     self.items = [[KxSMBProvider sharedSmbProvider] fetchAtPath:@"smb://10.10.1.1/mnt/sdb1"];
     NSLog(@"count: %d", [self.items count]);
-    
+    /**
     NSEnumerator *e = [self.items objectEnumerator];
     id object;
     while (object = [e nextObject]) {
@@ -155,8 +155,27 @@
             NSLog(@"File Path: %@", tree.path);
         }
     }
-    
+    */
     [self.tableView reloadData];
+}
+
+- (void)clickAddFile:(id)sender
+{
+    NSLog(@"clickAddFile start");
+
+    NSDate *now = [NSDate date];
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"yyyy/MM/dd HH:mm:ss"];
+    NSString *contents = [NSString stringWithFormat:@"Add file test - %@", [formatter stringFromDate:now]];
+    NSLog(@"contents: %@", contents);
+    
+    [formatter setDateFormat:@"yyyyMMddHHmmss"];
+    NSString *newFilePath = [NSString stringWithFormat:@"smb://10.10.1.1/mnt/sdb1/test_%@.txt", [formatter stringFromDate:now]];
+    
+    NSData *data = [contents dataUsingEncoding:NSUTF8StringEncoding];
+    
+    KxSMBItemFile *file = (KxSMBItemFile *)[[KxSMBProvider sharedSmbProvider] createFileAtPath:newFilePath overwrite:YES];
+    [file writeData:data];
 }
 
 @end

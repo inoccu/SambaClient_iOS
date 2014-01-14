@@ -47,9 +47,14 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Samba Client" id="8aX-hd-Na3">
-                        <barButtonItem key="rightBarButtonItem" title="Login" id="Fwn-Ky-hHr">
+                        <barButtonItem key="leftBarButtonItem" title="Login" id="Fwn-Ky-hHr">
                             <connections>
                                 <action selector="clickLogin:" destination="Ah2-Z6-QlT" id="FsJ-ZF-0VU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="AddFile" id="UfM-30-aHJ">
+                            <connections>
+                                <action selector="clickAddFile:" destination="Ah2-Z6-QlT" id="UUm-4R-QSV"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
