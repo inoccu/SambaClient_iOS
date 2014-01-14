@@ -36,6 +36,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="vwF-py-5Nt" kind="push" identifier="SelectFile" id="ZPh-CK-1jx"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -57,6 +60,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FGq-Eg-6dI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1163" y="-150"/>
+        </scene>
+        <!--File Detail View Controller-->
+        <scene sceneID="W5J-AI-Abn">
+            <objects>
+                <viewController id="vwF-py-5Nt" customClass="FileDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OM0-xJ-lDk"/>
+                        <viewControllerLayoutGuide type="bottom" id="XuR-qW-xxg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="cIF-GM-Rkz">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSs-TZ-HIo">
+                                <rect key="frame" x="0.0" y="65" width="768" height="959"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qgf-aM-MhH"/>
+                    <connections>
+                        <outlet property="textView" destination="RSs-TZ-HIo" id="GMo-Nc-Ppd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hzF-Ny-ycv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2161" y="-150"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="VMC-7b-mcB">

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		9851A414188515C40086E5D4 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9851A413188515C40086E5D4 /* MainStoryboard_iPad.storyboard */; };
 		9851A4171885174A0086E5D4 /* EntriesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9851A4161885174A0086E5D4 /* EntriesTableViewController.m */; };
+		98D6BFA91885204000DDD49E /* FileDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98D6BFA81885204000DDD49E /* FileDetailViewController.m */; };
 		98ED7D31187D251D007C6601 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ED7D30187D251D007C6601 /* Foundation.framework */; };
 		98ED7D33187D251D007C6601 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ED7D32187D251D007C6601 /* CoreGraphics.framework */; };
 		98ED7D35187D251D007C6601 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 98ED7D34187D251D007C6601 /* UIKit.framework */; };
@@ -46,6 +47,8 @@
 		9851A413188515C40086E5D4 /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		9851A4151885174A0086E5D4 /* EntriesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntriesTableViewController.h; sourceTree = "<group>"; };
 		9851A4161885174A0086E5D4 /* EntriesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntriesTableViewController.m; sourceTree = "<group>"; };
+		98D6BFA71885204000DDD49E /* FileDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileDetailViewController.h; sourceTree = "<group>"; };
+		98D6BFA81885204000DDD49E /* FileDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileDetailViewController.m; sourceTree = "<group>"; };
 		98ED7D2D187D251D007C6601 /* SambaClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SambaClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98ED7D30187D251D007C6601 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		98ED7D32187D251D007C6601 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -153,6 +156,8 @@
 				9851A413188515C40086E5D4 /* MainStoryboard_iPad.storyboard */,
 				9851A4151885174A0086E5D4 /* EntriesTableViewController.h */,
 				9851A4161885174A0086E5D4 /* EntriesTableViewController.m */,
+				98D6BFA71885204000DDD49E /* FileDetailViewController.h */,
+				98D6BFA81885204000DDD49E /* FileDetailViewController.m */,
 			);
 			path = SambaClient;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98ED7D41187D251D007C6601 /* AppDelegate.m in Sources */,
+				98D6BFA91885204000DDD49E /* FileDetailViewController.m in Sources */,
 				9851A4171885174A0086E5D4 /* EntriesTableViewController.m in Sources */,
 				98ED7D7E187D26C3007C6601 /* KxSMBProvider.m in Sources */,
 				98ED7D3D187D251D007C6601 /* main.m in Sources */,

@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-#import "KxSMBProvider.h"
-
 @interface EntriesTableViewController : UITableViewController
 {
     UITableView *_tableView;

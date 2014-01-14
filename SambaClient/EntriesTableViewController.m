@@ -7,6 +7,9 @@
 //
 
 #import "EntriesTableViewController.h"
+#import "FileDetailViewController.h"
+
+#import "KxSMBProvider.h"
 
 @interface EntriesTableViewController ()
 
@@ -121,7 +124,6 @@
 }
 */
 
-/*
 #pragma mark - Navigation
 
 // In a story board-based application, you will often want to do a little preparation before navigation
@@ -129,9 +131,13 @@
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([[segue identifier] isEqualToString:@"SelectFile"]) {
+        UITableViewCell *cell = (UITableViewCell *)sender;
+        
+        FileDetailViewController *viewController = (FileDetailViewController *)[segue destinationViewController];
+        viewController.path = cell.textLabel.text;
+    }
 }
-
- */
 
 - (void)clickLogin:(id)sender
 {
